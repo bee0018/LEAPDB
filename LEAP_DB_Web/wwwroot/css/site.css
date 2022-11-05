@@ -27,7 +27,7 @@ body {
 
 .textFields {
     text-align: center;
-    padding: 54px;
+    padding: 40px;
 }
 
 .loginButton {
@@ -67,4 +67,16 @@ body {
 
 .footer {
     text-align: center;
+}
+
+.imageResize {
+    width: 190px;
+}
+
+.parentDetails {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: slategrey;
+    font-weight: 500;
 }
