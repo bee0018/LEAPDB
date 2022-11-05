@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2b8oWrR1/JrzaYiQtCsMLnyuK7vgDxRnMh/gGGuKF+w=",
+  "Hash": "P082xo+bB3gnk4e1C4yebb0UqEiZvWprLm9tBLCL3v0=",
   "Source": "LEAP_DB_Web",
   "BasePath": "_content/LEAP_DB_Web",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\bryce\\OneDrive\\Desktop\\LEAPDB\\LEAPDB\\LEAP_DB_Web\\wwwroot\\logos\\Leap and Learn Center Logo - tagline - trans bg - png .png",
+      "SourceId": "LEAP_DB_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bryce\\OneDrive\\Desktop\\LEAPDB\\LEAPDB\\LEAP_DB_Web\\wwwroot\\",
+      "BasePath": "_content/LEAP_DB_Web",
+      "RelativePath": "logos/Leap and Learn Center Logo - tagline - trans bg - png .png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logos\\Leap and Learn Center Logo - tagline - trans bg - png .png"
     }
   ]
 }

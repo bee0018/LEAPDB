@@ -16,3 +16,55 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.headerText {
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #050a30;
+}
+
+.textFields {
+    text-align: center;
+    padding: 54px;
+}
+
+.loginButton {
+    border-radius: 25px;
+    background: #050a30;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+}
+
+.inputFields {
+    width: 473px;
+    height: 35px;
+    font-size: 23px;
+}
+
+.contactUs {
+    top: 110px;
+    right: 57px;
+    background: rgb(5, 10, 48);
+    color: white;
+    width: 143px;
+    height: 50px;
+    position: absolute;
+}
+
+.help {
+    top: 164px;
+    right: 57px;
+    background: white;
+    color: #050a30;
+    position: absolute;
+    width: 143px;
+    height: 50px;
+}
+
+.footer {
+    text-align: center;
+}

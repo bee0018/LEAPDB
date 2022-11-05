@@ -1,10 +1,40 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
+<div>
+    <button class="contactUs">Contact Us</button>
+</div>
+<div>
+    <button class="help">Help</button>
+</div>
+
 
 <div class="text-center">
-    <h1 class="display-4">LEAP Database Administration</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <img src="logos/Leap and Learn Center Logo - tagline - trans bg - png .png" alt="LEAP Logo"/>
+    <h1 class="headerText"
+    >LEAP Database Administration</h1>
+    <hr style = "color: #050a30"/>
+</div>
+
+<div>
+    <div class="textFields">
+        <div>
+            <label style="font-size: 35px; color: #050a30;font-weight: 500;">Username:</label>
+            <input type="text" name="Username" class="inputFields">
+        </div>
+
+        <div style="padding: 10px;">
+            <label style="font-size: 35px; color: #050a30;font-weight: 500;">Password:</label>
+            <input type="password" name="Password" class="inputFields">
+        </div>
+
+        <button class="loginButton">Login</button>
+        <p>
+            <a href="https://localhost:7140/Privacy" 
+               style="color: white; font-weight: inherit;">Change Password
+           </a>
+        </p>    
+        </div>
 </div>
