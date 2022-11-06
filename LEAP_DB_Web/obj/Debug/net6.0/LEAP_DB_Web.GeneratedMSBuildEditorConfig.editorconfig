@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\bryce\OneDrive\Desktop\LEAPDB\LEAPDB\LEAP_DB_Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
