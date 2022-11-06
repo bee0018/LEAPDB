@@ -3,13 +3,35 @@
 @{
     ViewData["Title"] = "Home";
 }
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1" style="font-size: 20px">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark footer" style="right: " asp-area="" asp-page="/RegistrationPage">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 <div>
     <button class="contactUs">Contact Us</button>
 </div>
 <div>
     <button class="help">Help</button>
 </div>
-
+   
 
 <div class="text-center">
     <img src="logos/Leap and Learn Center Logo - tagline - trans bg - png .png" alt="LEAP Logo"/>
@@ -29,8 +51,12 @@
             <label style="font-size: 35px; color: #050a30;font-weight: 500;">Password:</label>
             <input type="password" name="Password" class="inputFields">
         </div>
-
-        <button class="loginButton">Login</button>
+        
+        <form action="/Dashboard">
+                <button type="submit" class="loginButton">Login</button>
+        </form>
+                   
+        
         <p>
             <a href="https://localhost:7140/Privacy" 
                style="color: white; font-weight: inherit;">Change Password
@@ -38,3 +64,9 @@
         </p>    
         </div>
 </div>
+    <footer class="border-top footer text-muted" style="background: white">
+        <div class="container">
+            &copy; Auburn University 2022<a asp-area="" asp-page="/Privacy"></a>
+        </div>
+    </footer>
+</body>

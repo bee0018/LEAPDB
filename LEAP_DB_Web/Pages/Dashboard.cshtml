@@ -1,0 +1,30 @@
+﻿@page
+@model LEAP_DB_Web.Pages.DashboardModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<html>
+<body>
+    <header><nav class="nav"></nav></header>
+    <ul class="sidenav" style="text-decoration:none">
+        <img src="logos/Leap and Learn Center Logo - tagline - trans bg - png .png" alt="LEAP Logo" width="200" height="200" />
+        <center>
+            <li class="nav-item">
+                <a style="text-decoration:none" asp-page="/Index">Home</a>
+                <a style="text-decoration:none" asp-page="/RegistrationPage">Registration</a>
+                <a style="text-decoration:none" asp-page="#">Modules</a>
+                <a style="text-decoration:none" asp-page="#">Activities</a>
+                <a style="text-decoration:none" asp-page="#">Contact</a>
+         </center>
+        </li> 
+    </ul>
+    <script type="text/javascript">
+        function openpop() {
+            window.open("asp-page","width=200,height=200,screenX=200,screenY=200");
+        }
+    </script>
+    
+</body>
+
+
+</html>

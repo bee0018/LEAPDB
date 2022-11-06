@@ -1,0 +1,77 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Register User";
+}
+<div>
+    <h6 style="text-align: right">@DateTime.Now</h6>
+    <h1 style="text-align: center;">@ViewData["Title"]</h1>
+</div>
+
+<div>
+    <form>
+        <div>
+            <label style="font-weight: 500">Username:</label>
+            <input type="email" class="form-control" id="user">
+        </div>
+        
+        <div>
+            <label style="font-weight: 500">Password:</label>
+            <input type="email" class="form-control">
+        </div>        
+        
+        <div>
+            <label style="font-weight: 500">First Name:</label>
+            <input type="email" class="form-control">
+        </div>        
+        
+        <div>
+            <label style="font-weight: 500">Last Name:</label>
+            <input type="email" class="form-control">
+        </div>       
+        
+        <div>
+            <label style="font-weight: 500"> Phone Number</label>
+            <input type="email" class="form-control" placeholder="Ex: 123-456-7890">
+        </div>
+
+        <div>
+            <label style="font-weight: 500">Email address:</label>
+            <input type="email" class="form-control">
+        </div>        
+        
+        <div>
+            <label style="font-weight: 500">Authorization Type:</label>
+            <select class="form-select">
+                <option>Parent</option>
+                <option>Teacher</option>
+                <option>Administrator</option>
+            </select>
+        </div>
+
+        <p class="parentDetails">-- Parent Details Below --</p>        
+        <div>
+            <label style="font-weight: 500">Parent Name:</label>
+            <input type="email" class="form-control"/>
+        </div>        
+        
+        <div>
+            <label style="font-weight: 500">Phone Number</label>
+            <input type="email" class="form-control" placeholder="Ex: 123-456-7890">
+        </div>
+
+        <div>
+            <label style="font-weight: 500">Email address</label>
+            <input type="email" class="form-control">
+        </div>
+
+    </form>
+    <footer class="border-top footer text-muted" style="background: white">
+        <div class="container">
+            &copy; Auburn University 2022<a asp-area="" asp-page="/Privacy"></a>
+        </div>
+    </footer>
+</div>
+<div align="center">
+    <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
+</div>

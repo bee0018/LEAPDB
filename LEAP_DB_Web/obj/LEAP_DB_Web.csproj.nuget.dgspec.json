@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bryce\\OneDrive\\Desktop\\LEAPDB\\LEAPDB\\LEAP_DB_Web\\LEAP_DB_Web.csproj": {}
+    "C:\\Users\\12566\\source\\repos\\LEAP-DB_Web\\LEAP_DB_Web\\LEAP_DB_Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bryce\\OneDrive\\Desktop\\LEAPDB\\LEAPDB\\LEAP_DB_Web\\LEAP_DB_Web.csproj": {
+    "C:\\Users\\12566\\source\\repos\\LEAP-DB_Web\\LEAP_DB_Web\\LEAP_DB_Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bryce\\OneDrive\\Desktop\\LEAPDB\\LEAPDB\\LEAP_DB_Web\\LEAP_DB_Web.csproj",
+        "projectUniqueName": "C:\\Users\\12566\\source\\repos\\LEAP-DB_Web\\LEAP_DB_Web\\LEAP_DB_Web.csproj",
         "projectName": "LEAP_DB_Web",
-        "projectPath": "C:\\Users\\bryce\\OneDrive\\Desktop\\LEAPDB\\LEAPDB\\LEAP_DB_Web\\LEAP_DB_Web.csproj",
-        "packagesPath": "C:\\Users\\bryce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bryce\\OneDrive\\Desktop\\LEAPDB\\LEAPDB\\LEAP_DB_Web\\obj\\",
+        "projectPath": "C:\\Users\\12566\\source\\repos\\LEAP-DB_Web\\LEAP_DB_Web\\LEAP_DB_Web.csproj",
+        "packagesPath": "C:\\Users\\12566\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\12566\\source\\repos\\LEAP-DB_Web\\LEAP_DB_Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bryce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\12566\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
