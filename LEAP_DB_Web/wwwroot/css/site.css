@@ -1,20 +1,21 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+@media (min-width: 0px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin: 0;
+    margin-bottom: 60px;
 }
 
 .headerText {
@@ -27,7 +28,7 @@ body {
 
 .textFields {
     text-align: center;
-    padding: 40px;
+    padding: 54px;
 }
 
 .loginButton {
@@ -79,4 +80,42 @@ body {
     font-size: 20px;
     color: slategrey;
     font-weight: 500;
+}
+
+.dashboard {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-block: #04eff0;
+    box-sizing: border-box;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: #050a30;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sidenav a {
+    padding-top: 100px;
+    padding: 15px 15px 15px 0px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover, a.active {
+    background: #0c1661;
+    transition: 0.3s;
+}
+
+html, body, body ul {
+    left: 0;
+    right: 0;
+    top: 0
 }
