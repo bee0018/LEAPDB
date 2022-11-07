@@ -1,0 +1,16 @@
+﻿@page
+@model LEAP_DB_Web.Pages.RosterPageModel
+@{
+    ViewData["Title"] = "Roster";
+}
+<div>
+    <h6 style="text-align: right">@DateTime.Now</h6>
+    <h1 style="text-align: center;">@ViewData["Title"]</h1>
+</div>
+
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Select Roster (.csv)</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+</form>
