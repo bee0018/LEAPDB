@@ -1,0 +1,55 @@
+﻿@page
+@model LEAP_DB_Web.Pages.ModulePageModel
+@{
+    ViewData["Title"] = "Modules";
+}
+<div>
+    <h1 class="headerText">Module Name</h1>
+    <h6 style="text-align: right">@DateTime.Now</h6>
+</div>
+
+<div>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="size">Number of Modules:</label>
+            <select class="form-control" id="size">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select> 
+        </div>
+        <div>
+            <label>Activity Name:</label>
+            <input type="email" class="form-control">
+        </div>  
+    </form>
+
+
+
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="size">Activity Type:</label>
+            <select class="form-control" id="size">
+                <option>Numbers</option>
+                <option>Ratios & Proportional Relationships</option>
+                <option>Geometry</option>
+                <option>Expressions & Equations</option>
+                <option>Probability</option>
+            </select>
+        </div>
+    </form>
+
+</div>
+        <p class="formfield">
+            <label>Activity Description</label>
+            <textarea id="textarea" rows="5" style="width: 350px;"></textarea>
+        </p>
+        
+        <div>
+            <label>Pass/Fail Indicator:</label>
+            <input/>
+        </div>
+<div>
+    <label>Added Date: MM/DD/YYYY</label>
+</div>

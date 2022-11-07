@@ -1,0 +1,26 @@
+﻿@page
+@model LEAP_DB_Web.Pages.ContactPageModel
+@{
+    ViewData["Title"] = "Contact";
+}
+<div>
+    <h1 class="headerText" style="text-align: center">Contact Us</h1>
+    <h6 style="text-align: right; margin-bottom: -15px">@DateTime.Now</h6>
+</div>
+
+<form>
+    <div>
+        <label style="font-weight: 500; margin-top: 24px;">Email address:</label>
+        <input type="email" class="form-control" style="margin-bottom: 35px">
+    </div>  
+        <label style="font-weight: 500">Message:</label>
+    <div>
+        <textarea style="height: 605px; width: 100%"></textarea>
+    </div>
+    <div>
+
+    </div>
+    <div align="center">
+        <button type="submit" class="btn btn-primary loginButton" style="margin-top: 80px;">Send Email</button>
+    </div>
+</form>

@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\bryce\OneDrive\Desktop\LEAPDB\LEAPDB\LEAP_DB_Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/ContactPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -27,8 +31,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/ModulePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kdWxlUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/RegistrationPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/RosterPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9zdGVyUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
