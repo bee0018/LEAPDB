@@ -8,53 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LEAP_DB_Web
 build_property.RootNamespace = LEAP_DB_Web
-build_property.ProjectDir = C:\Users\bryce\OneDrive\Desktop\LEAPDB\LEAPDB\LEAP_DB_Web\
+build_property.ProjectDir = C:\Users\12566\source\repos\LEAP-DB-WEB\LEAP_DB_Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\bryce\OneDrive\Desktop\LEAPDB\LEAPDB\LEAP_DB_Web
+build_property.MSBuildProjectDirectory = C:\Users\12566\source\repos\LEAP-DB-WEB\LEAP_DB_Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/ContactPage.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/ContactPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Dashboard.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Error.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Index.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/ModulePage.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/ModulePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kdWxlUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/RegistrationPage.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/RegistrationPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/RosterPage.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/RosterPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9zdGVyUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/_ViewImports.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/_ViewStart.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bryce/OneDrive/Desktop/LEAPDB/LEAPDB/LEAP_DB_Web/Pages/Shared/_Layout.cshtml]
+[C:/Users/12566/source/repos/LEAP-DB-WEB/LEAP_DB_Web/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l3zpzhup4p
