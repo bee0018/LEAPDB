@@ -10,9 +10,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
         align-items: stretch;
+        place-items: center;
+        background-color:white;
     }
     .grid > article {
-        border: 1px solid #ccc;
+        border: 1px solid white;
         box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     }
     .grid > article img {
@@ -28,6 +30,27 @@
         padding: 10px;
         width: 100%;
     }
+    .card {
+        border: none;
+    }
+
+    .btn, btn-primary {
+        background: orange;
+        border: orange;
+        width: 120px;
+        align-self: center;
+    }
+
+    a.hover {
+        background-color: #050a30;
+        transition: 0.3s;
+    }
+
+    .jumbotron {
+        background: #050a30;
+        color: white;
+    }
+    .footer{display:none !important}
 </style>
 
 <div class="jumbotron">
@@ -46,7 +69,7 @@
         <div class="card-body">
             <h5 class="card-title">Roster</h5>
             <p class="card-text">Add, update, or delete your current roster. </p>
-            <a href="/RosterPage" class="btn btn-primary">Go</a>
+            <a href="/RosterPage" class="btn btn-primary">Go!</a>
         </div>
     </div>
 
@@ -55,7 +78,7 @@
         <div class="card-body">
             <h5 class="card-title">Registration</h5>
             <p class="card-text">Add, update, or delete users from the system.</p>
-            <a href="/RegistrationPage" class="btn btn-primary">Go</a>
+            <a href="/RegistrationPage" class="btn btn-primary">Go!</a>
         </div>
     </div>
 
@@ -64,16 +87,16 @@
         <div class="card-body">
             <h5 class="card-title">Modules</h5>
             <p class="card-text">Add, update, or delete modules for your students.</p>
-            <a href="/ModulePage" class="btn btn-primary">Go</a>
+            <a href="/ModulePage" class="btn btn-primary">Go!</a>
         </div>
     </div>
 
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="logos/newActivities.png" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Activities</h5>
-            <p class="card-text">Add, update, or delete any activities.</p>
-            <a href="" class="btn btn-primary">Go</a>
+            <h5 class="card-title">Student Maintenance</h5>
+            <p class="card-text">Click here to view an individual student's' progress.</p>
+            <a href="/StudentMaintenance" class="btn btn-primary">Go!</a>
         </div>
     </div>
 
@@ -82,9 +105,9 @@
         <div class="card-body">
             <h5 class="card-title">Contact Us</h5>
             <p class="card-text">Send an email showing your student reports and more.</p>
-            <a href="/ContactPage" class="btn btn-primary">Go</a>
+            <a href="/ContactPage" class="btn btn-primary">Go!</a>
         </div>
     </div>
 </main>
- 
+
 
