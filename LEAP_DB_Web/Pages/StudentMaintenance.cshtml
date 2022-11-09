@@ -1,0 +1,76 @@
+﻿@page
+@model LEAP_DB_Web.Pages.StudentMaintenanceModel
+@{
+    ViewData["Title"] = "Student Maintenance";
+}
+<style>
+    .div {
+        margin: 0;
+        list-style: none;
+        float: left;
+    }
+    .footer{display:none !important}
+</style>
+<div>
+    <h6 style="text-align: right">@DateTime.Now</h6>
+    <h1 style="text-align: center;">@ViewData["Title"]</h1>
+</div>
+
+<form>
+    <div>
+        <label style="font-weight: 500">Student's First Name:</label><br />
+        <input type="email" class="form-control">
+    </div>
+    <div>
+        <label style="font-weight: 500">Student's Last Name:</label><br />
+        <input type="email" class="form-control">
+    </div>
+    <div>
+        <label style="font-weight: 500">Student's Username:</label><br />
+        <input type="email" class="form-control">
+    </div>
+    <div>
+        <label style="font-weight: 500">Student's Password:</label><br />
+        <input type="email" class="form-control">
+    </div>
+    <br /><div>
+        <label style="font-weight: 500">Parent's Name:</label><br />
+        <input type="email" class="form-control">
+    </div>
+    <div>
+        <label style="font-weight: 500">Parent's Email:</label><br />
+        <input type="email" class="form-control">
+    </div>
+
+
+    <br /><div>
+        <label for="">Select:</label>
+        <select name="student-name" id="student-name">
+            <option value="add">Add</option>
+            <option value="delete">Delete</option>
+            <option value="update">Update</option>
+            <option value="view">View</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="">Select a module:</label>
+        <ul>
+            <label><input type="checkbox" />Module 1</label><br />
+            <label><input type="checkbox" />Module 2</label><br />
+            <label><input type="checkbox" />Module 3</label><br />
+            <label><input type="checkbox" />Module 4</label><br />
+        </ul>
+        <label for="">Select an activity:</label>
+        <ul>
+            <label><input type="checkbox" />Activity 1</label><br />
+            <label><input type="checkbox" />Activity 2</label><br />
+            <label><input type="checkbox" />Activity 3</label><br />
+            <label><input type="checkbox" />Activity 4</label><br />
+        </ul>
+    </div>
+    <div align="center">
+        <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
+    </div>
+
+</form>

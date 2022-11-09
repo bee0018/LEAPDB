@@ -3,8 +3,10 @@
 @{
     ViewData["Title"] = "Modules";
 }
+<sty
+
 <div>
-    <h1 class="headerText">Module Name</h1>
+    <h1 style="text-align: center">Module Name</h1>
     <h6 style="text-align: right">@DateTime.Now</h6>
 </div>
 
@@ -19,17 +21,25 @@
                 <option>4</option>
             </select> 
         </div>
-        <div>
+        <div><br />
             <label>Activity Name:</label>
             <input type="email" class="form-control">
-        </div>  
+        </div> 
+        <br /><div class="form-group">
+            <label for="size">Activity Type:</label>
+            <select class="form-control" id="size">
+                <option>Assignment</option>
+                <option>Discussion Board</option>
+                <option>Quiz</option>
+            </select>
+        </div>
     </form>
 
 
 
     <form class="form-inline">
-        <div class="form-group">
-            <label for="size">Activity Type:</label>
+        <div class="form-group"><br />
+            <label for="size">Activity Subject:</label>
             <select class="form-control" id="size">
                 <option>Numbers</option>
                 <option>Ratios & Proportional Relationships</option>
@@ -41,15 +51,18 @@
     </form>
 
 </div>
-        <p class="formfield">
+        <p class="formfield"><br />
             <label>Activity Description</label>
             <textarea id="textarea" rows="5" style="width: 350px;"></textarea>
         </p>
         
-        <div>
+        <div><br />
             <label>Pass/Fail Indicator:</label>
             <input/>
         </div>
-<div>
+<div><br />
     <label>Added Date: MM/DD/YYYY</label>
+</div>
+<div align="center">
+    <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
 </div>
