@@ -1,28 +1,18 @@
 
-LEAP_DB_Web/.vs/LEAP_DB_Web/FileContentIndex/64bfbde6-fdfe-4730-aa08-f59f99afdd24.vsidx
+LEAP_DB_Web/.vs/LEAP_DB_Web/FileContentIndex/6404c2b5-0317-4443-a794-2e823be5572b.vsidx
+
+LEAP_DB_Web/.vs/LEAP_DB_Web/FileContentIndex/73a82e99-bf25-4fa8-af56-4eb890a824a3.vsidx
 
 *.vsidx
-
-LEAP_DB_Web/.vs/LEAP_DB_Web/v17/.suo
 
 LEAP_DB_Web/.vs/LEAP_DB_Web/v17/
 
 LEAP_DB_Web/bin/Debug/net6.0/
 
-*.v2
+LEAP_DB_Web/obj/Debug/net6.0/
 
-LEAP_DB_Web/obj/Debug/net6.0/LEAP_DB_Web.csproj.CoreCompileInputs.cache
+LEAP_DB_Web/obj/
 
-LEAP_DB_Web/obj/Debug/net6.0/LEAP_DB_Web.dll
+LEAP_DB_Web/.vs/LEAP_DB_Web/DesignTimeBuild/
 
-LEAP_DB_Web/obj/Debug/net6.0/LEAP_DB_Web.GeneratedMSBuildEditorConfig.editorconfig
-
-LEAP_DB_Web/obj/Debug/net6.0/LEAP_DB_Web.pdb
-
-LEAP_DB_Web/obj/Debug/net6.0/project.razor.vs.json
-
-LEAP_DB_Web/obj/Debug/net6.0/ref/LEAP_DB_Web.dll
-
-LEAP_DB_Web/obj/Debug/net6.0/refint/LEAP_DB_Web.dll
-
-LEAP_DB_Web/obj/staticwebassets.pack.sentinel
+LEAP_DB_Web/.vs/ProjectEvaluation/
