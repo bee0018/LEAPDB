@@ -3,14 +3,18 @@
 @{
     ViewData["Title"] = "Home";
 }
+
+<!--Contact Us Button-->
 <div>
     <button class="contactUs">Contact Us</button>
 </div>
+
+<!--Help Button-->
 <div>
     <button class="help">Help</button>
 </div>
 
-
+<!--Help Button-->
 <div class="text-center">
     <img src="logos/Leap and Learn Center Logo - tagline - trans bg - png .png" alt="LEAP Logo" style="margin-top: -75px"/>
     <h1 class="headerText"
@@ -20,24 +24,29 @@
 
 <div>
     <div class="textFields">
+        
+        <!--User name Field-->
         <div>
-            <label style="font-size: 35px; color: #050a30;font-weight: 500;">Username:</label>
+            <label style="font-size: 35px; color: #050a30; font-weight: 500;">Username:</label>
             <input type="text" name="Username" class="inputFields">
         </div>
-
+        
+        <!--Password Field-->
         <div style="padding: 10px;">
-            <label style="font-size: 35px; color: #050a30;font-weight: 500;">Password:</label>
+            <label style="font-size: 35px; color: #050a30; font-weight: 500;">Password:</label>
             <input type="password" name="Password" class="inputFields">
         </div>
         
+        <!--Login button-->
         <form action="/Dashboard">
             <button type="submit" class="loginButton">Login</button>
         </form>
         
+        <!--Forgot Password Link-->
         <p>
             <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop">
                 Forgot Password?
             </a>
-        </p>    
-        </div>
+        </p>
+    </div>
 </div>
