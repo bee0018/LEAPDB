@@ -8,7 +8,7 @@
     .footer {display: none !important}
 </style>
 
-
+<!--Header leading back to the dashboard-->
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
@@ -17,70 +17,74 @@
     </nav>
 </header>
 
+<!--Time stamp data-->
 <div>
     <h6 style="text-align: right">@DateTime.Now</h6>
     <h1 style="text-align: center;">@ViewData["Title"]</h1>
 </div>
 
+<!--Form for registering the student-->
 <div>
     <form>
+        <!--Username field-->
         <div>
             <label style="font-weight: 500">Username:</label>
-            <input type="email" class="form-control" id="user">
-        </div>
-        
-        <div>
-            <label style="font-weight: 500">Password:</label>
-            <input type="email" class="form-control">
-        </div>        
-        
-        <div>
-            <label style="font-weight: 500">First Name:</label>
-            <input type="email" class="form-control">
-        </div>        
-        
-        <div>
-            <label style="font-weight: 500">Last Name:</label>
-            <input type="email" class="form-control">
-        </div>       
-        
-        <div>
-            <label style="font-weight: 500"> Phone Number</label>
-            <input type="email" class="form-control" placeholder="Ex: 123-456-7890">
+            <input class="form-control" id="user">
         </div>
 
+        <!--Password field-->
+        <div>
+            <label style="font-weight: 500">Password:</label>
+            <input class="form-control">
+        </div>
+        
+        <!--First name field-->
+        <div>
+            <label style="font-weight: 500">First Name:</label>
+            <input class="form-control">
+        </div>
+        
+        <!--Last name field-->
+        <div>
+            <label style="font-weight: 500">Last Name:</label>
+            <input class="form-control">
+        </div>
+        
+        <!--Phone number field-->
+        <div>
+            <label style="font-weight: 500"> Phone Number</label>
+            <input class="form-control" placeholder="Ex: 123-456-7890">
+        </div>
+        
+        <!--Email address field-->
         <div>
             <label style="font-weight: 500">Email address:</label>
             <input type="email" class="form-control">
-        </div>        
-        
-        <div>
-            <label style="font-weight: 500">Authorization Type:</label>
-            <select class="form-select">
-                <option>Parent</option>
-                <option>Teacher</option>
-                <option>Administrator</option>
-            </select>
         </div>
+        
+        <p class="parentDetails">-- Parent Details Below --</p>
 
-        <p class="parentDetails">-- Parent Details Below --</p>        
+        <!--Parent name field-->
         <div>
             <label style="font-weight: 500">Parent Name:</label>
-            <input type="email" class="form-control"/>
-        </div>        
+            <input class="form-control"/>
+        </div>
         
+        <!--Parent phone number field-->
         <div>
             <label style="font-weight: 500">Phone Number</label>
-            <input type="email" class="form-control" placeholder="Ex: 123-456-7890">
+            <input class="form-control" placeholder="Ex: 123-456-7890">
         </div>
-
+        
+        <!--Parent email address field-->
         <div>
             <label style="font-weight: 500">Email address</label>
             <input type="email" class="form-control">
         </div>
-
     </form>
 </div>
+
+<!--Submit registration button-->
 <div align="center">
-    <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
+    <button type="submit" class="btn btn-primary loginButton" style="margin-top: 50px;">Submit</button>
 </div>
