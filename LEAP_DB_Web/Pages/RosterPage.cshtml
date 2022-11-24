@@ -4,6 +4,7 @@
     ViewData["Title"] = "Roster";
 }
 
+<!--Header leading back to dashboard-->
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
@@ -12,14 +13,21 @@
     </nav>
 </header>
 
+<!--Time stamp data-->
 <div>
     <h6 style="text-align: right">@DateTime.Now</h6>
     <h1 style="text-align: center;">@ViewData["Title"]</h1>
 </div>
 
+<!--Gets the file from the machine-->
 <form>
     <div class="form-group">
         <label for="exampleFormControlFile1">Select Roster (.csv)</label>
         <input type="file" class="form-control-file" id="exampleFormControlFile1" accept=".csv">
     </div>
 </form>
+
+<!--Process Roster Button-->
+<div align="center">
+    <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
+</div>
