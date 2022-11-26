@@ -15,9 +15,11 @@ K-12 through an engaging, yet interactive mathematical web application.
 
 Hardware Requirements
 * Laptop/Desktop
+
 Software Requirements
 * .NET / C#
 * React.js
+* Node.js
 * Database: SQL Server Express (preferred)
 * Web Browser
 
