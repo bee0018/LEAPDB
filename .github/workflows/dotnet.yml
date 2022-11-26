@@ -21,4 +21,5 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Build
-      run: msbuild LEAP_DB_Web.sln
+      run: msbuild LEAPDB/LEAP_DB_Web/LEAP_DB_Web.sln
+
