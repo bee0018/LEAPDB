@@ -23,6 +23,7 @@ Software Requirements
 * Database: SQL Server Express (preferred)
 * Web Browser
 * Git Client (Gitkraken preferred)
+* Visual Studio (preferred 2022)
 
 ### Interface Metaphor: Web Application
 LEAP is implemented as a web application that will prompt its user to indicate which grade level they wish to study, 
