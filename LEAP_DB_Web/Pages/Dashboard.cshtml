@@ -38,10 +38,11 @@
         background: #cc4e0b;
         border: #cc4e0b;
         width: 120px;
-        align-self: center;
+        align-items: center;
+        text-align: center;
     }
 
-    a.hover {
+    a:hover {
         background-color: #050a30;
         transition: 0.3s;
     }
@@ -49,6 +50,10 @@
     .jumbotron {
         background: #050a30;
         color: white;
+    }
+    
+    .card-title, .card-text {
+        text-align: center;
     }
     .footer{display:none !important}
 </style>
@@ -72,8 +77,9 @@
         <img class="card-img-top" src="logos/classLogo.png" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title" style="font-weight: bold">Roster</h5>
-            <p class="card-text">Add, update, or delete your current roster. </p>
-            <a href="/RosterPage" class="btn btn-primary">Go!</a>
+            <p class="card-text">Add, update, or delete your current roster.<br/>
+                <a href="/RosterPage" class="btn btn-primary">Go!</a>
+            </p>
         </div>
     </div>
 
@@ -82,8 +88,9 @@
         <img class="card-img-top" src="logos/newRoster.png" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title" style="font-weight: bold">Registration</h5>
-            <p class="card-text">Add, update, or delete users from the system.</p>
-            <a href="/RegistrationPage" class="btn btn-primary">Go!</a>
+            <p class="card-text">Add, update, or delete users from the system.<br/>
+                <a href="/RegistrationPage" class="btn btn-primary">Go!</a>
+            </p>
         </div>
     </div>
 
@@ -92,8 +99,9 @@
         <img class="card-img-top" src="logos/modulesLogo.png" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title" style="font-weight: bold">Modules</h5>
-            <p class="card-text">Add, update, or delete modules for your students.</p>
-            <a href="/ModulePage" class="btn btn-primary">Go!</a>
+            <p class="card-text">Add, update, or delete modules for your students.<br/>
+                <a href="/ModulePage" class="btn btn-primary">Go!</a>
+            </p>
         </div>
     </div>
 
@@ -102,8 +110,9 @@
         <img class="card-img-top" src="logos/newActivities.png" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title" style="font-weight: bold">Student Maintenance</h5>
-            <p class="card-text">Click here to view an individual student's' progress.</p>
-            <a href="/StudentMaintenance" class="btn btn-primary">Go!</a>
+            <p class="card-text">Click here to view an individual student's progress.<br/>
+                <a href="/StudentMaintenance" class="btn btn-primary">Go!</a>
+            </p>
         </div>
     </div>
 
@@ -112,8 +121,9 @@
         <img class="card-img-top" src="logos/contactUsLogo.png" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title" style="font-weight: bold">Contact Us</h5>
-            <p class="card-text">Send an email showing your student reports and more.</p>
-            <a href="/ContactPage" class="btn btn-primary">Go!</a>
+            <p class="card-text">Send an email showing your student reports and more.<br/>
+                <a href="/ContactPage" class="btn btn-primary">Go!</a>
+            </p>
         </div>
     </div>
 
@@ -122,8 +132,9 @@
         <img class="card-img-top" src="logos/signOut.svg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title" style="font-weight: bold">Sign Out</h5>
-            <p class="card-text">Exit out of LEAP Database Administration.</p>
-            <a href="/Index" class="btn btn-primary">Log Out</a>
+            <p class="card-text">Exit out of LEAP Database Administration.<br/>
+                <a href="/Index" class="btn btn-primary">Log Out</a>
+            </p>
         </div>
     </div>
 </main>

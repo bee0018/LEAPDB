@@ -9,7 +9,57 @@
         list-style: none;
         float: left;
     }
+
     .footer{display:none !important}
+    /* Grid for Page Layout*/
+    .grid
+    { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        place-items: center;
+    }
+
+    .modal {
+        display: none;
+        position: fixed; 
+        padding-top: 50px;
+        left: 0; 
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+        position: relative; 
+        background-color: #050a30;
+        color: white;
+        padding: 20px; 
+        margin: auto; 
+        width: 75%;  
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    .close-btn {
+        float: right; 
+        color: lightgray; 
+        font-size: 24px;  
+        font-weight: bold;
+    }
+    .close-btn:hover {
+        color: darkgray;
+    }
+    
+    .a {
+        display: block;
+        display: inline-block;
+        margin: 20px;
+        font-size: 20px;
+    }
+
 </style>
 
 <header>
@@ -23,6 +73,16 @@
 <div>
     <h6 style="text-align: right">@DateTime.Now</h6>
     <h1 style="text-align: center;">@ViewData["Title"]</h1>
+</div>
+
+<br /><div>
+    <label for="">Select:</label>
+    <select name="student-name" id="student-name">
+        <option value="add">Add</option>
+        <option value="delete">Delete</option>
+        <option value="update">Update</option>
+        <option value="view">View</option>
+    </select>
 </div>
 
 <form>
@@ -51,35 +111,150 @@
         <input type="email" class="form-control">
     </div>
 
-
-    <br /><div>
-        <label for="">Select:</label>
-        <select name="student-name" id="student-name">
-            <option value="add">Add</option>
-            <option value="delete">Delete</option>
-            <option value="update">Update</option>
-            <option value="view">View</option>
-        </select>
-    </div>
-
-    <div>
-        <label for="">Select a module:</label>
-        <ul>
-            <label><input type="checkbox" />Module 1</label><br />
-            <label><input type="checkbox" />Module 2</label><br />
-            <label><input type="checkbox" />Module 3</label><br />
-            <label><input type="checkbox" />Module 4</label><br />
-        </ul>
-        <label for="">Select an activity:</label>
-        <ul>
-            <label><input type="checkbox" />Activity 1</label><br />
-            <label><input type="checkbox" />Activity 2</label><br />
-            <label><input type="checkbox" />Activity 3</label><br />
-            <label><input type="checkbox" />Activity 4</label><br />
-        </ul>
-    </div>
+    <main class="grid">
+        <form>
+            <div style="padding-block: 45px">
+                <label for="">Choose a module:</label><br/>
+                <select id="module" name="module" onchange="enable()">
+                    <option value="module1">Module 1</option>
+                    <option value="module2">Module 2</option>
+                    <option value="module3">Module 3</option>
+                    <option value="module4">Module 4</option>
+                </select>
+            </div>
+            <div style="padding-block: 45px">
+                <label for="">Choose a lesson:</label><br />
+                <select id="lessons" disabled>
+                    <option value="lesson1">Lesson 1</option>
+                    <option value="lesson2">Lesson 2</option>
+                    <option value="lesson3">Lesson 3</option>
+                    <option value="lesson4">Lesson 4</option>
+                </select>
+            </div>
+            <div style="padding-block: 45px">
+                <label for="">Choose an activity:</label><br/>
+                <select id="activities" disabled>
+                    <option value="activity1">Activity 1</option>
+                    <option value="activity2">Activity 2</option>
+                    <option value="activity3">Activity 3</option>
+                    <option value="activity4">Activity 4</option>
+                </select>
+            </div>
+            
+        </form>
+    </main>
     <div align="center">
-        <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
+        <button id="modal-btn" type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
     </div>
-
+    <div class="modal">
+        <div class="modal-content" style="background-color: #050a30">
+            <span class="close-btn">&times;</span>
+            <h1 style="text-align: center">Success! Here is the content you've selected: </h1>
+            <div class="grid" style="align-content: center">
+                <h3 id="selected-modules"></h3>
+                <h3 id="selected-lessons"></h3>
+                <h3 id="selected-activities"></h3>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-header" style="background-color: ">
+            <span class="close-btn">&times;</span>
+            <h1>I am the Header</h1>
+        </div>
+        <div class="modal-content">
+            <p>this is the text inside the modal</p>
+        </div>
+        <div class="modal-footer">
+            <h2>I am the Footer</h2>
+        </div>
+    </div>
+    <div id="modalbox" class="modal">
+        <div open class="modalcontent">
+            <div class="modal-header">
+                <h3 style="text-align: center">Here is the content you've selected:</h3>
+            </div>
+            <div class="grid" style="align-content: center">
+                <h3 id="selected-modules"></h3>
+                <h3 id="selected-lessons"></h3>
+                <h3 id="selected-activities"></h3>
+            </div>
+            <form class="form-inline">
+                <div class="form-element">
+                    <p style="font-size: 14px">Select a module to view or edit/delete:</p>
+                    <div>
+                        <input type="checkbox" id="module1">
+                        <label>Module 1:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="module2">
+                        <label>Module 2:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="module3">
+                        <label>Module 3:</label>
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <a href="#" class="button two" id="open" role="button">Edit</a>
+                <a class="button" onclick="document.getElementById('viewmodule').style.display='none'"
+                   role="button">Exit</a>
+            </div>
+        </div>
+    </div>
 </form>
+
+<script>
+    function enable() {
+        document.getElementById("lessons").disabled = false;
+        document.getElementById("activities").disabled = false;
+    }
+    /* Components for the Modal */
+    let modalBtn = document.getElementById("modal-btn")
+    let modal = document.querySelector(".modal")
+    let closeBtn = document.querySelector(".close-btn")
+    modalBtn.onclick = function(){
+      modal.style.display = "block"
+    }
+    closeBtn.onclick = function(){
+      modal.style.display = "none"
+    }
+    window.onclick = function(e){
+      if(e.target == modal){
+        modal.style.display = "none"
+      }
+    }
+    
+    
+    /* Prints the user's selection. */
+    /* Module */
+    const selectMod = document.getElementById('module')
+    const resultMod = document.getElementById('selected-modules')
+    /* Lesson */
+    const selectLes = document.getElementById('lessons')
+    const resultLes = document.getElementById('selected-lessons')
+    /* Activity */
+    const selectAct = document.getElementById('activities')
+    const resultAct = document.getElementById('selected-activities')
+
+
+    // When a new <option> is selected
+    selectMod.addEventListener('change', () => {
+        const modIndex = selectMod.selectedIndex;
+        resultMod.textContent = `Selected Module(s): ${modIndex + 1}`
+    })
+    selectLes.addEventListener('change', () => {
+        const lesIndex = selectLes.selectedIndex;
+        resultLes.textContent = `Selected Lesson(s): ${lesIndex + 1}`
+    })
+    selectAct.addEventListener('change', () => {
+        const actIndex = selectAct.selectedIndex;
+        resultAct.textContent = `Selected Activity(ies): ${actIndex + 1}`
+    })
+    
+    function selection() {
+        var s = document.getElementsByName('parameters')[0];
+        var text = s.options[s.selectedIndex].text;
+    }
+</script>
