@@ -4,6 +4,104 @@
     ViewData["Title"] = "Modules";
 }
 
+<style>
+    .button {
+        background-color: #050a30;
+        color: white;
+        border: 0;
+        border-radius: 7px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        font-weight: bold;
+        padding: 15px 20px;
+    }
+
+        .button.two {
+            background-color: lightgray;
+            color: #050a30;
+        }
+
+    .modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: 0;
+        background: rgba(77,77,77,0.7);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+        .modal:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    .modalcontent {
+        position: relative;
+        background: #fff;
+        width: 900px;
+        height: auto;
+        max-height: 90%;
+        max-width: 90%;
+        padding: 20px 40px;
+        border-radius: 8px;
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    text-fix {
+        font-weight: bold;
+        color: #050a30;
+        text-align: center;
+    }
+
+    modal, form, div.form-element, div.form-control {
+        margin: 15px 15px 15px;
+        border: 10px;
+        line-height: 15px;
+        padding: 0px 20px;
+        display: block;
+        width: 100%;
+    }
+
+    modal-header {
+        border-color: #050a30;
+        background-color: #050a30;
+        margin: 20px;
+        color: white;
+    }
+
+    input {
+        margin: 15px;
+        width: 50%;
+        height: 32px;
+        border-color: lightgray;
+        border-radius: 3px;
+        display: block;
+    }
+
+    .a.one, a.one:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    .a.two, a.two:hover {
+        text-decoration: none;
+        color: #050a30;
+    }
+
+    .checkbox {
+        width: 10px;
+        height: 10px;
+    }
+</style>
+
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
@@ -13,63 +111,215 @@
 </header>
 
 <div>
-    <h1 style="text-align: center">Module Name</h1>
+    <h1 style="text-align: center">Welcome to the Modules Page!</h1>
     <h6 style="text-align: right">@DateTime.Now</h6>
 </div>
 
 <div>
-    <form class="form-inline">
-        <div class="form-group">
-            <label for="size">Number of Modules:</label>
-            <select class="form-control" id="size">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select> 
+
+    <p style="text-align: center">Here is where you can add, edit, or delete your modules. Click a button to get started.</p>
+    <div id="modalbox" class="modal">
+        <div open class="modalcontent">
+            <div class="modal-header">
+                <h3 style="text-align: center">Create a new Module</h3>
+            </div>
+            <form class="form-inline">
+                <div class="form-element">
+                    <label>Module Name:</label>
+                    <input placeholder="Module1" type="text" id="module-name">
+                </div>
+                <div class="form-element">
+                    <label for="lesson-desp">Module Description:</label>
+                    <input placeholder="Type something here..." type="text" id="lesson-desp">
+                </div>
+            </form>
+            <div class="modal-footer">
+                <label style="text-align: left; color:lightgray">Section 1 of 3:</label>
+                <a href="#modalbox-first" class="button one btn-next" id="open" role="button">Next</a>
+            </div>
         </div>
-        <div><br />
-            <label>Activity Name:</label>
-            <input type="email" class="form-control">
-        </div> 
-        <br /><div class="form-group">
-            <label for="size">Activity Type:</label>
-            <select class="form-control" id="size">
-                <option>Assignment</option>
-                <option>Discussion Board</option>
-                <option>Quiz</option>
-            </select>
+    </div>
+    <div id="modalbox-first" class="modal">
+        <div open class="modalcontent">
+            <div class="modal-header">
+                <h3 style="text-align: center">Create a new Module</h3>
+            </div>
+            <form class="form-inline">
+                <div class="form-element">
+                    <label>Lesson Name:</label>
+                    <input placeholder="Lesson 1" type="text" id="lesson-name">
+                </div>
+                <div class="form-element">
+                    <label for="lesson-desp">Lesson Description:</label>
+                    <input placeholder="Type something here..." type="text" id="lesson-desp">
+                </div>
+                <div class="form-element">
+                    <label for="lesson-type">Lesson Type (upload a file or url):</label>
+                    <input type="text" id="lesson-type" class="form-control"></input>
+                </div>
+                <div class="form-element">
+                    <label for="size">Lesson Subject:</label>
+                    <select class="form-control" id="size">
+                        <option>Numbers</option>
+                        <option>Ratios & Proportional Relationships</option>
+                        <option>Geometry</option>
+                        <option>Expressions & Equations</option>
+                        <option>Probability</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="lesson-number">Select the number of lessons:</label>
+                    <select class="form-control" id="size">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <label style="text-align: left; color:lightgray">Section 2 of 3:</label>
+                <a href="#modalbox" class="button two btn-prev" id="open" role="button">Prev</a>
+                <a href="#modalbox-second" class="button one btn-next" id="open" role="button">Next</a>
+            </div>
         </div>
-    </form>
-
-
-
-    <form class="form-inline">
-        <div class="form-group"><br />
-            <label for="size">Activity Subject:</label>
-            <select class="form-control" id="size">
-                <option>Numbers</option>
-                <option>Ratios & Proportional Relationships</option>
-                <option>Geometry</option>
-                <option>Expressions & Equations</option>
-                <option>Probability</option>
-            </select>
+    </div>
+    <div id="modalbox-second" class="modal">
+        <div open class="modalcontent">
+            <div class="modal-header">
+                <h3 style="text-align: center">Create a new Module</h3>
+            </div>
+            <form class="form-inline">
+                <div class="form-element">
+                    <label>Activity Name:</label>
+                    <input placeholder="Activity 1" type="text" id="activity-name">
+                </div>
+                <div class="form-element">
+                    <label for="activity-desp">Activity Description:</label>
+                    <input placeholder="Type something here..." type="text" id="activity-desp">
+                </div>
+                <div class="form-element">
+                    <label for="activity-type">Activity Type:</label>
+                    <select id="activity-type" class="form-control">
+                        <option>Assignment</option>
+                        <option>Discussion Board</option>
+                        <option>Quiz</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="activity-subject">Activity Subject:</label>
+                    <select class="form-control" id="activity-subject">
+                        <option>Numbers</option>
+                        <option>Ratios & Proportional Relationships</option>
+                        <option>Geometry</option>
+                        <option>Expressions & Equations</option>
+                        <option>Probability</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="activity-number">Select the number of lessons:</label>
+                    <select class="form-control" id="activity-number">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <a href="#" class="button one" id="open" role="button" style="justify-self: left">Add Another Activity</a>
+                <label style="text-align: left; color: lightgray">Section 3 of 3:</label>
+                <a href="#modalbox-first" class="button two btn-prev" id="open" role="button">Prev</a>
+                <a href="#modalbox-final" class="button one btn-next" id="open" role="button">Submit</a>
+            </div>
         </div>
-    </form>
-
+    </div>
+    <div id="modalbox-final" class="modal">
+        <div open class="modalcontent">
+            <div class="modal-header">
+                <h3 style="text-align: center">Success!</h3>
+            </div>
+            <div class="form-inline">
+                <br /><p style="font-size: 20px; text-align: center">Your new module has been added. You can view the recently added module in the 'View Modules' tab or add a new lesson.</p><br />
+            </div>
+            <div class="modal-footer">
+                <label style="text-align: left; color:lightgray">Added Date: MM/DD/YYYY</label>
+                <a href="#" onclick="window.location.reload()" class="button two btn-prev" id="open" role="button">Add New Lesson</a>
+                <a class="button" onclick="document.getElementById('modalbox-final').style.display='none'"
+                   role="button">Exit</a>
+            </div>
+        </div>
+    </div>
+    <div id="viewmodule" class="modal">
+        <div open class="modalcontent">
+            <div class="modal-header">
+                <h3 style="text-align: center">Here are your modules:</h3>
+            </div>
+            <form class="form-inline">
+                <div class="form-element">
+                    <p style="font-size: 14px">Select a module to view or edit/delete:</p>
+                    <div>
+                        <input type="checkbox" id="module1">
+                        <label>Module 1:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="module2">
+                        <label>Module 2:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="module3">
+                        <label>Module 3:</label>
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <a href="#" class="button two" id="open" role="button">Edit</a>
+                <a class="button" onclick="document.getElementById('viewmodule').style.display='none'"
+                   role="button">Exit</a>
+            </div>
+        </div>
+    </div>
 </div>
-        <p class="formfield"><br />
-            <label>Activity Description</label>
-            <textarea id="textarea" rows="5" style="width: 350px;"></textarea>
-        </p>
-        
-        <div><br />
-            <label>Pass/Fail Indicator:</label>
-            <input/>
-        </div>
-<div><br />
-    <label>Added Date: MM/DD/YYYY</label>
+
+<div><br /></div>
+
+<div align="left" style="padding: 20px">
+    <a href="#viewmodule" class="button two">View Modules</a>
+    <a href="#modalbox" class="button one" id="open" role="button">Add New Module</a>
 </div>
-<div align="center">
-    <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Submit</button>
-</div>
+<script>
+    const modal = document.querySelector('open');
+    const open-modal = document.querySelector('.open');
+    const close-modal = document.querySelector('.close');
+
+    open-modal.addEventListener('click', () -> {
+        modal.showModal();
+    })
+    close-modal.addEventListener('click', () -> {
+        modal.close();
+    })
+
+    $("div[id^='modalbox']").each(function () {
+
+        var currentModal = $(this);
+
+        //click next
+        currentModal.find('.btn-next').click(function () {
+            currentModal.modal('hide');
+            currentModal.closest("div[id^='modalbox']").nextAll("div[id^='modalbox']").first().modal('show');
+        });
+
+        //click prev
+        currentModal.find('.btn-prev').click(function () {
+            currentModal.modal('hide');
+            currentModal.closest("div[id^='modalbox']").prevAll("div[id^='modalbox']").first().modal('show');
+        });
+
+    });
+</script>
