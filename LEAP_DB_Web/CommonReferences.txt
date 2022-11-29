@@ -1,0 +1,6 @@
+﻿////////////////////////
+///COLOR THEMES////////
+////////////////////////
+
+navy blue color: #050a30
+orange color: #cc4e0b
