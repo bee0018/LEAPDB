@@ -1,0 +1,37 @@
+﻿@page
+@model LEAP_DB_Web.Pages.ReportsPageModel
+@{
+    ViewData["Title"] = "Reports";
+}
+
+<!--Header leading back to dashboard-->
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-page="/Dashboard">Home</a>
+        </div>
+    </nav>
+</header>
+
+<!--Time stamp data-->
+<div>
+    <h6 style="text-align: right">@DateTime.Now</h6>
+    <h1 style="text-align: center;">@ViewData["Title"]</h1>
+</div>
+
+<!--Student drop down combo box-->
+<div class="form-group">
+    <label for="exampleFormControlSelect1">Select Student:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+        <option>Student 1</option>
+        <option>Student 2</option>
+        <option>Student 3</option>
+        <option>Student 4</option>
+        <option>Student 5</option>
+    </select>
+</div>
+
+<!--Process Student Records Button-->
+<div align="center">
+    <button type="submit" class="btn btn-primary loginButton" style="margin-top: 100px;">Download Record</button>
+</div>
