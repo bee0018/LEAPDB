@@ -7,31 +7,35 @@
     .footer{display: none !important}
 </style>
 
+<!--Header leading back to login screen-->
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
-            <a class="navbar-brand" asp-area="" asp-page="/Dashboard">Home</a>
+            <a class="navbar-brand" asp-area="" asp-page="/Index">Return to Login Screen</a>
         </div>
     </nav>
 </header>
 
+<!--Header and Time stamp-->
 <div>
     <h1 style="text-align: center">Contact Us</h1>
     <h6 style="text-align: right; margin-bottom: -15px">@DateTime.Now</h6>
 </div>
 
 <form>
+    <!--Email user is sending message to-->
     <div>
         <label style="font-weight: 500; margin-top: 24px;">Email address:</label>
         <input type="email" class="form-control" style="margin-bottom: 35px">
-    </div>  
-        <label style="font-weight: 500">Message:</label>
+    </div>
+    
+    <!--Message of the email-->
+    <label style="font-weight: 500">Message:</label>
     <div>
         <textarea style="height: 500px; width: 100%"></textarea>
     </div>
-    <div>
-
-    </div>
+    
+    <!--Send Email Button-->
     <div align="center">
         <button type="submit" class="btn btn-primary loginButton" style="margin-top: 80px;">Send Email</button>
     </div>
