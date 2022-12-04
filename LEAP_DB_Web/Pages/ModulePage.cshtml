@@ -102,6 +102,7 @@
     }
 </style>
 
+<!--Header leading back dashboard-->
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
@@ -110,14 +111,15 @@
     </nav>
 </header>
 
+<!--Header showing title and time stamp-->
 <div>
     <h1 style="text-align: center">Welcome to the Modules Page!</h1>
     <h6 style="text-align: right">@DateTime.Now</h6>
 </div>
 
 <div>
-
     <p style="text-align: center">Here is where you can add, edit, or delete your modules. Click a button to get started.</p>
+    <!--Create Module Modal-->
     <div id="modalbox" class="modal">
         <div open class="modalcontent">
             <div class="modal-header">
@@ -157,6 +159,8 @@
                     <label for="lesson-type">Lesson Type (upload a file or url):</label>
                     <input type="text" id="lesson-type" class="form-control"></input>
                 </div>
+                
+                <!--Create Lesson Form-->
                 <div class="form-element">
                     <label for="size">Lesson Subject:</label>
                     <select class="form-control" id="size">
@@ -240,6 +244,8 @@
             </div>
         </div>
     </div>
+    
+    <!--Success Message Modal-->
     <div id="modalbox-final" class="modal">
         <div open class="modalcontent">
             <div class="modal-header">
@@ -293,6 +299,8 @@
     <a href="#viewmodule" class="button two">View Modules</a>
     <a href="#modalbox" class="button one" id="open" role="button">Add New Module</a>
 </div>
+
+<!--JavaScript functionality-->
 <script>
     const modal = document.querySelector('open');
     const open-modal = document.querySelector('.open');
