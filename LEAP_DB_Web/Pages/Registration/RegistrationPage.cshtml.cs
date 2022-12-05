@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace LEAP_DB_Web.Pages
+namespace LEAP_DB_Web.Pages.Registration
 {
     public class PrivacyModel : PageModel
     {
