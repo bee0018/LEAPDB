@@ -5,143 +5,155 @@
 }
 
 <style>
-    .grid { 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        align-items: stretch;
-        place-items: center;
-        background-color:white;
-    }
-    .grid > article {
-        border: 1px solid white;
-        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-    }
-    .grid > article img {
-        max-width: 100%;
-    }
-    .text {
-        padding: 0 20px 20px;
-    }
-    .text > button {
-        background: gray;
-        border: 0;
-        color: white;
-        padding: 10px;
+    /* JUMBOTRON STYLE HERE */
+    .jumbotron{
+        background: 
+                  linear-gradient(
+                                 rgba(0, 0, 250, 0.25), 
+                                 rgba(125, 250, 250, 0.45)
+),
+                  url(https://source.unsplash.com/1600x1050/?computer+screen);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color:white !important;
+        height:100vh;
         width: 100%;
     }
-    .card {
-        border: none;
+
+    /* BUTTON STYLE HERE */
+    .btn{
+        margin-right:10px;
+    }
+    .btn-outline-primary{
+        border-color: white;
+        color:white;
+        background-color:transparent;
+        margin-top:30px;
+        font-weight:100;
+    }
+    .btn-outline-primary:hover{
+        border-color: transparent;
+        color:black;
+        background-color:white;
+    }
+    .btn-outline-primary:active{
+        border-color: transparent;
+        color:black;
+        background-color:white;
+        padding:9px 20px 9px 20px;
     }
 
-    .btn, btn-primary {
-        background: #cc4e0b;
-        border: #cc4e0b;
-        width: 120px;
-        align-items: center;
-        text-align: center;
+    /* BUTTON HEADER RIGHT */
+    .rightHeader{
+        position: absolute;
+        top: -15px;
+        right: 8px;
+    }
+    /* BUTTON HEADER LEFT */
+    .leftHeader{
+        position: absolute;
+        top: -15px;
+        left: 20px;
     }
 
-    a.hover {
-        background-color: #050a30;
-        transition: 0.3s;
+    .title{
+        margin-top:10vh;
+    }
+    .text_margin{
+        width:70vw;
+        margin: 0 auto;
+    }
+    .string-1{
+        padding-top:30px;
+        width:600px;
+        margin:0 auto;
+        font-weight:100;
+        margin-top:-35px;
     }
 
-    .jumbotron {
-        background: #050a30;
-        color: white;
+
+    .content{
+        margin:10%;
     }
-
-    .card-title, .card-text {text-align: center;}
-
-    .footer{display:none !important}
+    br{
+        margin:20px;
+    }
 </style>
 
 <!--Welcome banner for the user-->
-<div class="jumbotron text-center">
-    <h1 class="display-4" style="text-align: center">Welcome back, User!</h1>
-    <p class="lead" style="text-align: center">Click panels to get started with LEAP Database Administration!</p>
-    <hr class="my-4">
-    <p>Navigate to our website for official information and student content.</p>
-    <p class="lead">
-            <a class="btn btn-primary btn-lg text-center" href="https://leap-au.azurewebsites.net/" role="button">LEAP Web</a>
-        </p>
+<div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <h1 class="title display-3 text-center" style="font-weight:100;">Welcome Back,<strong style="font-weight:600;">User!</strong></h1>
+            <p class="lead string-1 text-center">Navigate to our website for official information and student content.</p>
+        </div>
+
+        <div align="center">
+            <a href="https://leap-au.azurewebsites.net/"><button class="btn btn-outline-primary">Visit LEAP</button></a>
+        </div>
     </div>
+</div>
 
 <!--Card Grid listing the different navigation options-->
 <main class="grid">
     
     <!--Roster Card-->
-    <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="logos/classLogo.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold; font-size: 20px;">Roster</h5>
-            <p class="card-text" style="font-size: 17px">
-                Add, update, or delete your current roster.<br />
-                <a href="/RosterPage" class="btn btn-primary" style="margin-top: 10px">Go!</a>
-            </p>
-        </div>
+    <div class="card-grid-space">
+        <a class="card" href="/RosterPage" style="--bg-img: url(https://www.talentproindia.com/wp-content/uploads/2020/11/How-Does-the-Attendance-Management-System-Help-the-Employees.jpg)">
+            <div>
+                <h1>Roster</h1>
+                <p>Add, update, or delete your current roster.</p>
+            </div>
+        </a>
     </div>
 
     <!--Registration Card-->
-    <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="logos/newRoster.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold; font-size: 20px;">Registration</h5>
-            <p class="card-text" style="font-size: 17px">
-                Add, update, or delete users from the system.<br />
-                <a href="/RegistrationPage" class="btn btn-primary" style="margin-top: 10px">Go!</a>
-            </p>
-        </div>
+    <div class="card-grid-space">
+        <a class="card" href="/RegistrationPage" style="--bg-img: url(https://b24b1e3aab831184e7b0-2d3a122b6f92d6181afe6099b19e3c72.ssl.cf1.rackcdn.com/article/image/large_07044846-c03b-4ad8-8c0b-e391d56bbb66.jpg)">
+            <div>
+                <h1>Registration</h1>
+                <p>Add, update, or delete users from the system.</p>
+            </div>
+        </a>
     </div>
 
     <!--Modules Card-->
-    <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="logos/modulesLogo.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold; font-size: 20px;">Modules</h5>
-            <p class="card-text" style="font-size: 17px">
-                Add, update, or delete modules for your students.<br />
-                <a href="/ModulePage" class="btn btn-primary" style="margin-top: 10px">Go!</a>
-            </p>
-        </div>
+    <div class="card-grid-space">
+        <a class="card" href="/ModulePage" style="--bg-img: url(https://myviewboard.com/blog/wp-content/uploads/2020/08/MP0027-01-scaled.jpg)">
+            <div>
+                <h1>Modules</h1>
+                <p>Add, update, or delete modules for your students.</p>
+            </div>
+        </a>
     </div>
 
     <!--Student Maintenance Card-->
-    <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="logos/newActivities.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold; font-size: 20px;">Student Maintenance</h5>
-            <p class="card-text" style="font-size: 17px">
-                Click here to view an individual student's progress.<br />
-                <a href="/StudentMaintenance" class="btn btn-primary" style="margin-top: 10px">Go!</a>
-            </p>
-        </div>
+    <div class="card-grid-space">
+        <a class="card" href="/StudentMaintenance" style="--bg-img: url(https://online.visual-paradigm.com/repository/images/4e40244e-900f-431f-ac33-253a07bd29b7/progress-design/adjusting-progress.png)">
+            <div>
+                <h1>Student Maintenance</h1>
+                <p>Click here to view an individual student's progress.</p>
+            </div>
+        </a>
     </div>
 
     <!--Report Services Card-->
-    <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="logos/reportsPage.svg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold; font-size: 20px;">Reports</h5>
-            <p class="card-text" style="font-size: 17px">
-                Download and share your student's academic record.<br />
-                <a href="/ReportsPage" class="btn btn-primary" style="margin-top: 10px">Go!</a>
-            </p>
-        </div>
+    <div class="card-grid-space">
+        <a class="card" href="/ReportsPage" style="--bg-img: url(https://contenthub-static.grammarly.com/blog/wp-content/uploads/2021/12/how-to-write-a-report.jpeg)">
+            <div>
+                <h1>Reports</h1>
+                <p>Download and share your student's academic record.</p>
+            </div>
+        </a>
     </div>
 
     <!--Logout Card-->
-    <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="logos/signOut.svg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold; font-size: 20px;">Sign Out</h5>
-            <p class="card-text" style="font-size: 17px">
-                Exit out of LEAP Database Administration.<br />
-                <a href="/Index" class="btn btn-primary" style="margin-top: 10px">Log Out</a>
-            </p>
-        </div>
+    <div class="card-grid-space">
+        <a class="card" href="/Index" style="--bg-img: url(https://blog.darwinbox.com/hubfs/Imported_Blog_Media/Exit-Management.jpg)">
+            <div>
+                <h1>Sign Out</h1>
+                <p>Exit out of LEAP Database Administration.</p>
+            </div>
+        </a>
     </div>
 </main>
-
-
