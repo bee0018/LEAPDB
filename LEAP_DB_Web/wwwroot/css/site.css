@@ -205,7 +205,6 @@ a {
     transition: all, var(--transition-time);
     position: relative;
     overflow: hidden;
-    border: 10px solid #ccc;
     text-decoration: none;
 }
 
