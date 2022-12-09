@@ -5,16 +5,4 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Pages\NewFolder1\**" />
-    <Content Remove="Pages\NewFolder1\**" />
-    <EmbeddedResource Remove="Pages\NewFolder1\**" />
-    <None Remove="Pages\NewFolder1\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\logos\" />
-  </ItemGroup>
-
 </Project>
