@@ -22,21 +22,27 @@
     <h6 style="text-align: right; margin-bottom: -15px">@DateTime.Now</h6>
 </div>
 
-<form>
+<form method="post">
     <!--Email user is sending message to-->
     <div>
         <label style="font-weight: 500; margin-top: 24px;">Email address:</label>
-        <input type="email" class="form-control" style="margin-bottom: 35px">
+        <input type="email" class="form-control" name="emailAddress" style="margin-bottom: 10px">
+    </div>
+    
+    <!--Subject of the email-->
+    <div>
+        <label style="font-weight: 500;">Subject:</label>
+        <input type="text" class="form-control" name="subject" style="margin-bottom: 10px">
     </div>
     
     <!--Message of the email-->
     <label style="font-weight: 500">Message:</label>
     <div>
-        <textarea style="height: 500px; width: 100%"></textarea>
+        <textarea style="height: 470px; width: 100%" name="message"></textarea>
     </div>
     
     <!--Send Email Button-->
     <div align="center">
-        <button type="submit" class="btn btn-primary loginButton" style="margin-top: 80px;">Send Email</button>
+        <button type="submit" class="btn btn-primary loginButton" style="margin-top: 50px;">Send Email</button>
     </div>
 </form>
