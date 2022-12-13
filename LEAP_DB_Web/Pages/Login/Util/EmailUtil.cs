@@ -6,7 +6,7 @@ namespace LEAP_DB_Web.Pages.Login.Util
     public class EmailUtil
     {
         // Email placeholder 
-        private static string GetUserName()
+        private static string GetFromAddress()
         {
             return "csseaffinity.noreply@gmail.com";
         }
@@ -33,13 +33,13 @@ namespace LEAP_DB_Web.Pages.Login.Util
                 EnableSsl = true,
                 Host = "smtp.gmail.com",
                 Port = 587,
-                Credentials = new NetworkCredential(GetUserName(), GetPassword())
+                Credentials = new NetworkCredential(GetFromAddress(), GetPassword())
             };
 
             // Attempts to send email address
             try
             {
-                email.Send(GetUserName(), toAddress, subject, body);
+                email.Send(GetFromAddress(), toAddress, subject, body);
                 Console.WriteLine("\nEmail sent successfully!");
             }
             catch (SmtpException e)
